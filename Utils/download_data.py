@@ -5,7 +5,7 @@ import os
 def get_data(asset_list, start_date, end_date):
     # Create DATA folder if it doesn't exist
     if 'DATA' not in os.listdir():
-        os.mkdir('DATA')
+        os.mkdir('./DATA')
         print("Created 'DATA' directory.")
 
     # Source and store data in the 'DATA' directory if it doesn't exist
