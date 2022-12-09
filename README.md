@@ -8,25 +8,21 @@ The goal of this project to build and compare 2 a factor-based long short alloca
 
 ### Data
 
-Download data of chosen instruments and time period.
+Download data of chosen instruments and time period and the French-Fama model factors.
 
-### Regression
+### Build the 2 models
 
-There are 2 regressions to be completed for each asset
-- Regress asset's excess return on the factor model in order to get the coefficients for gathering our expected returns. 
-- Regress asset's returns on the SPY to obtain the betas of each asset compared to our benchmark. 
+### Estimators for expected returns and covariance 
 
-### Expected returns
-
-Calculate expected returns based on the French Fama model.
-
-### Portfolio optimization
-
-Solves objective function given for both strategies and returns optimal portfolio weights.
+### Re-balance portfolios per week
 
 ### Backtest
 
-Calculate returns based on portfolio optimization and re-balances the portfolio every week. Then calculates cumulative returns.
+### Computing and reporting metrics
+
+Sharpe ratio, Information ratio, M square, 
+
+### Write final report
 
 ## Build the project
 
@@ -38,11 +34,10 @@ cd FE630_Project
 pip3 install -r requirements.txt
 ```
 
-- Run
-
-```commandline
-python3 main.py
-```
+- To download the required data
+    - Run ```python3 download_data.py```
+    - Download the zip file from https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/ftp/F-F_Research_Data_Factors_daily_CSV.zip
+    - Extract zip file and put it in `DATA` folder
 
 ## Project members
 

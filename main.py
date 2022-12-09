@@ -1,4 +1,4 @@
-from Utils.download_data import get_data
+from download_data import get_data
 
 asset_list = [
     "FXE",
